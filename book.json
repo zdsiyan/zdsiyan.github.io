@@ -558,5 +558,45 @@
       "chapterLines": "//*[@id=\"content\"]/text()",
       "chapterEncodeType": "gbk",
       "cleaner": ""
+    },
+    {
+      "siteName": "睡前看小说",
+      "baseUrl": "https://www.wuliuyilushun.com/",
+      "enable": false,
+      "siteClassify": "缓慢",
+      "ruleUpdateTime": "1580548852000",
+      "author": "zdsiyan",
+      "searchUrl": "https://www.wuliuyilushun.com/search.html",
+      "searchMethod": "GET",
+      "searchParam": "keyword={keyword}&t_btnsearch=",
+      "searchEncode": "utf-8",
+      "searchBookList": "//div[@class='item-pic']",
+      "searchBookName": ".//h3/a/text()",
+      "searchBookUrl": ".//h3/a/@href",
+      "searchAuthor": ".//p/i[0]/text()",
+      "searchExtraRule": {
+        "imageUrl": "",
+        "bookSize": ".//td[4]/text()",
+        "lastUpdateTime": ".//td[5]/text()",
+        "lastChapterName": ".//td[2]/a/text()",
+        "introduce": "",
+        "classify": "",
+        "status": ""
+      },
+      "catalogChapterList": "//*[@id=\"list\"]/dl/dd",
+      "catalogChapterName": ".//a/text()",
+      "catalogChapterUrl": ".//a/@href",
+      "catalogExtraRule": {
+        "imageUrl": "//*[@id=\"fmimg\"]/img/@src",
+        "bookSize": "",
+        "lastUpdateTime": "",
+        "lastChapterName": "",
+        "introduce": "//*[@id=\"intro\"]/p/text()",
+        "classify": "",
+        "status": ""
+      },
+      "chapterLines": "//*[@id=\"content\"]/text()",
+      "chapterEncodeType": "utf-8",
+      "cleaner": ""
     }
  ]
