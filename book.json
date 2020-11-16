@@ -602,7 +602,7 @@
     {
       "siteName": "乐文小说网",
       "baseUrl": "https://www.lwxs9.com/",
-      "enable": false,
+      "enable": true,
       "siteClassify": "普通",
       "ruleUpdateTime": "1580558952000",
       "author": "zdsiyan",
@@ -612,7 +612,7 @@
       "searchEncode": "utf-8",
       "searchBookList": "//div[@class='novelslist2']/ul/li[position()>1]",
       "searchBookName": ".//span[@class='s2']/a/text()",
-      "searchBookUrl": "concat('https://www.lwxs9.com',.//span[@class='s2']/a/@href)",
+      "searchBookUrl": ".//span[@class='s2']/a/@href",
       "searchAuthor": ".//span[@class='s4']/a/text()",
       "searchExtraRule": {
         "imageUrl": "",
@@ -625,9 +625,9 @@
       },
       "catalogChapterList": "//div[@id='list']/dl/dt[2]/following::dd",
       "catalogChapterName": ".//a/text()",
-      "catalogChapterUrl": "concat('https://www.lwxs9.com',.//a/@href)",
+      "catalogChapterUrl": ".//a/@href",
       "catalogExtraRule": {
-        "imageUrl": "concat('https://www.lwxs9.com',//div[@id='fmimg']/img/@src)",
+        "imageUrl": "//div[@id='fmimg']/img/@src",
         "bookSize": "",
         "lastUpdateTime": "//div[@id='info']/p[3]/text()",
         "lastChapterName": "//div[@id='info']/p[4]/a/text()",
