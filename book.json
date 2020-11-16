@@ -598,5 +598,45 @@
       "chapterLines": "//*[@id=\"txt\"]/text()",
       "chapterEncodeType": "utf-8",
       "cleaner": ""
+    },
+    {
+      "siteName": "乐文小说网",
+      "baseUrl": "https://www.lwxs9.com/",
+      "enable": false,
+      "siteClassify": "普通",
+      "ruleUpdateTime": "1580558952000",
+      "author": "zdsiyan",
+      "searchUrl": "https://www.lwxs9.com/index.php?s=/web/index/search",
+      "searchMethod": "POST",
+      "searchParam": "name={keyword}",
+      "searchEncode": "utf-8",
+      "searchBookList": "//div[@class='novelslist2']/ul/li[position()>1]",
+      "searchBookName": ".//span[@class='s2']/a/text()",
+      "searchBookUrl": "concat('https://www.lwxs9.com',.//span[@class='s2']/a/@href)",
+      "searchAuthor": ".//span[@class='s4']/a/text()",
+      "searchExtraRule": {
+        "imageUrl": "",
+        "bookSize": "",
+        "lastUpdateTime": ".//span[@class='s6']/text()",
+        "lastChapterName": ".//span[@class='s3']/a/text()",
+        "introduce": "",
+        "classify": "",
+        "status": ""
+      },
+      "catalogChapterList": "//div[@id='list']/dl/dt[2]/following::dd",
+      "catalogChapterName": ".//a/text()",
+      "catalogChapterUrl": "concat('https://www.lwxs9.com',.//a/@href)",
+      "catalogExtraRule": {
+        "imageUrl": "concat('https://www.lwxs9.com',//div[@id='fmimg']/img/@src)",
+        "bookSize": "",
+        "lastUpdateTime": "//div[@id='info']/p[3]/text()",
+        "lastChapterName": "//div[@id='info']/p[4]/a/text()",
+        "introduce": "",
+        "classify": "",
+        "status": ""
+      },
+      "chapterLines": "//*[@id=\"content\"]/text()",
+      "chapterEncodeType": "utf-8",
+      "cleaner": "https://www.lwxs9.com | 章节错误，点此报送 | 报送后维护人员会在两分钟内校正章节内容，请耐心等待。"
     }
  ]
