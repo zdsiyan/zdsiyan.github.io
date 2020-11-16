@@ -573,7 +573,7 @@
       "searchBookList": "//div[@class='item-pic']",
       "searchBookName": ".//h3/a/text()",
       "searchBookUrl": ".//h3/a/@href",
-      "searchAuthor": ".//p[0]/i[0]/text()",
+      "searchAuthor": ".//h3/a/text()",
       "searchExtraRule": {
         "imageUrl": ".//a/img/@src",
         "bookSize": "",
